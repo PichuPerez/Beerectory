@@ -1,24 +1,23 @@
 import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './components/Layout/Navbar'
-import Footer from "./components/Layout/Footer";
+import Footer from './components/Layout/Footer'
 import styled from 'styled-components'
+import Styles from './components/Styles'
 
 const AppWrapper = styled.div`
-       background-color: purple;
-       height: 100%;
+       background-color: #f7dc83 !important;
+       height: 100vh;
 `;
 
 function App() {
   return (
-    <div>
+    <AppWrapper>
         <Navbar/>
-        <AppWrapper>
-
-        </AppWrapper>
+            <Styles/>
         <Footer/>
-    </div>
+    </AppWrapper>
   );
 }
 
